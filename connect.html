@@ -1,16 +1,146 @@
-<!-- This is our website's [INSERT CONTENT] page -->
+<!-- This is our website's Forums page -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="[INSERT CONTENT]"/>
-	<meta name="keywords" content="[INSERT CONTENT]" />
+	<meta name="description" content="This is where students can connect through forums on various topics"/>
+	<meta name="keywords" content="forums, discussion, collaboration" />
 	<meta name="author" content="Autumn, Xaed, Vy, Rasha"  />
-	<title></title>
+	<title>Chicago Students Connect - Connecting Students From All Over Chicago</title>
+	
+	<!-- Reference to external font 'Raleway' -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	
+	<!-- Reference to external CSS file -->
+	<link href="CSS/header.css" rel="stylesheet"/>
+	
+	<!-- Reference to external CSS file -->
+	<link href="CSS/connect.css" rel="stylesheet"/>
+	
+	<!-- Reference to external site for icons -->
+	<script src="https://kit.fontawesome.com/fe0917ff4c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
+	<!-- Navigation Bar -->
+	<header>
+		<a class="logo" href="index.html">
+			<img src="images/logo.jpg" alt="LinkStudents Chicago Logo" height="50px"/>
+		</a>
+		<div class="search">
+			<form action="scripts/search.php">
+				<input type="text" placeholder="Search.." name="search"/>
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		
+		<div class="icons">
+			<a href="index.html" title="Home"><i class="fa fa-home"></i></a>
+			<a class="active" href="connect.html" title="Forums"><i class="fa-solid fa-user-group"></i></a>
+			<a href="dM.html" title="Direct Messages"><i class="fa-solid fa-comment-dots"></i></a>
+			<div class="dropdown">
+			  <button class="dropbtn" title="Notifications"><i class="fa fa-bell"></i></button>
+			  <div class="dropdown-content">
+				<a href="#">AtikaDevi liked your post!</a>
+				<a href="#">AntonioMadrigal replied to your comment!</a>
+				<a href="#">TomathySimons commented on your post!</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <button class="dropbtn"><i class="fa fa-bars"></i></button>
+			  <div class="dropdown-content">
+				<a href="tutor.html">Find A Tutor</a>
+				<a href="signup.html">Sign Up To Be A Tutor</a>
+				<a href="about-us.html">About Us</a>
+				<a href="contact-us.html">Contact Us</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <button class="dropbtn"><i class="fa fa-user"></i></button>
+			  <div class="dropdown-content">
+				<a href="#">Edit Profile</a>
+				<a href="#">Settings</a>
+				<a href="#">Help</a>
+			  </div>
+			</div>
+		</div>
+	</header>
+	
+	<section id="education" class="top">
+		<h1>Education</h1>
+		  <div class="box">
+			<div class="subsection">
+				<a href="#"><h2>English</h2></a>
+				Discuss any English or Literature related work here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Mathematics</h2></a>
+				Discuss any Math related work here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Science</h2></a>
+				Discuss any Science related work here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>History</h2></a>
+				Discuss any History related work here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Social Studies</h2></a>
+				Discuss any Social Studies related work here!
+			</div>
+		  </div>
+	</section>
+	
+	<section id="leisure">
+		<h1>Leisure</h1>
+		  <div class="box">
+			<div class="subsection">
+				<a href="#"><h2>Sports</h2></a>
+				Share your favourite sport or learn more about one here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Music</h2></a>
+				Share your favourite song, band or artist here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Musical Instruments</h2></a>
+				Share your experience learning a musical instrument or learn from someone else here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Art	&#38; Animations</h2></a>
+				Share your artworks and animations here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Poetry &#38; Prose</h2></a>
+				Share your written works here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Gaming</h2></a>
+				Share about your favourite game(s) here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Reading</h2></a>
+				Share about your favourite book(s) here!
+			</div>
+		  </div>
+	</section>
+	
+	<section id="offTopic">
+		<h1>General</h1>
+		  <div class="box">
+			<div class="subsection">
+				<a href="#"><h2>General &#38; Off-Topic</h2></a>
+				Want to talk about something that is not related to anything above? Share it here!
+			</div>
+			<div class="subsection">
+				<a href="#"><h2>Vents</h2></a>
+				Feeling overwhelmed? Talk about it here!
+			</div>
+		  </div>
+	</section>
+	
 </body>
-</html
+</html>
