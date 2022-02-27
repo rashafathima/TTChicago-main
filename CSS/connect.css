@@ -17,15 +17,18 @@ section {
 	color: #000;
 }
 
+/* Styles the section's links */
 section a{
 	text-decoration: none;
 	color: #ff4747;
 }
 
+/* Adds a box around the section's links */
 .box{
 	border: 1px solid #000;
 }
 
+/* Styles the text within a section */
 .subsection {
 	padding: 0.2em 2em;
 	line-height: 24px;
@@ -36,8 +39,7 @@ section a{
 	background-color: #F9ECFC;
 }
 
+/* When the user hovers over a link, it gets underlined */
 section a:hover {
 	text-decoration: underline;
 }
-
-
