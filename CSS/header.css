@@ -9,7 +9,7 @@ header {
 
 /* Format text inside of header */
 header a, header input[type=text], .dropdown-content a {
-	font: 16px Helvetica, sans-serif;
+	font: 16px 'Raleway', sans-serif;
 	text-decoration: none;
 }
 
@@ -58,7 +58,7 @@ header .search button, .dropbtn {
 
 /* Current/active navbar link */
 .active {
-  background-color: #ff6d6d;
+  background-color: #ff4747;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -106,9 +106,5 @@ header .search button, .dropbtn {
   }
   header input[type=text] {
     border: 1px solid #ccc;
-  }
-  
-  header .search button{
-	  display: none;
   }
 }
