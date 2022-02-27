@@ -1,0 +1,16 @@
+/*
+filename: main.css
+authors: Xaed, Autumn
+created: 27/02/2022
+last modified: 27/02/2022
+description: stylesheet for all of the html files in HTML
+*/
+
+/* General Selection */
+/* Makes all text in the website black and with the Open Sans font */
+* {font-family: 'Open Sans', sans-serif; color:#000;}
+strong {font: 1.1em bold; font-family: 'Open Sans', sans-serif; color: #dea034;}
+
+/* Header */
+
+/* Navigation Bar */
