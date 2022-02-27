@@ -1,0 +1,45 @@
+/* Styles the body*/
+body {
+	background-color: #fff;
+	font: 16px 'Raleway', sans-serif;
+}
+
+/* Adds a padding to the first section of the page */
+.top {
+	padding-top: 120px;
+}
+
+/* Styles the section */
+section {
+	min-width: 50%;
+	padding: 1em 200px;
+	background-color: inherit;
+	color: #000;
+}
+
+/* Styles the section's links */
+section a{
+	text-decoration: none;
+	color: #ff4747;
+}
+
+/* Adds a box around the section's links */
+.box{
+	border: 1px solid #000;
+}
+
+/* Styles the text within a section */
+.subsection {
+	padding: 0.2em 2em;
+	line-height: 24px;
+}
+
+/* When the user hovers over a post, the background color changes */
+.subsection:hover {
+	background-color: #F9ECFC;
+}
+
+/* When the user hovers over a link, it gets underlined */
+section a:hover {
+	text-decoration: underline;
+}
