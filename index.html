@@ -7,10 +7,116 @@
 	<meta name="description" content="Describes what the website is about"/>
 	<meta name="keywords" content="home page, home, landing page" />
 	<meta name="author" content="Autumn, Xaed, Vy, Rasha"  />
-	<title></title>
+	<title>Chicago Students Connect - Connecting Students From All Over Chicago</title>
+	
+	<!-- Reference to external CSS file -->
+	<link href="CSS/header.css" rel="stylesheet"/>
+	
+	<!-- Reference to external CSS file -->
+	<link href="CSS/footer.css" rel="stylesheet"/>
+	
+	<!-- Reference to external CSS file -->
+	<link href="CSS/main.css" rel="stylesheet"/>
+	
+	<!-- Reference to external site for icons -->
+	<script src="https://kit.fontawesome.com/fe0917ff4c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+	<!-- Navigation Bar -->
+	<header>
+		<a class="logo" href="index.html">
+			<img src="images/logo.jpg" alt="LinkStudents Chicago Logo" height="50px"/>
+		</a>
+		<div class="search">
+			<form action="scripts/search.php">
+				<input type="text" placeholder="Search.." name="search"/>
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		
+		<div class="icons">
+			<a class="active" href="index.html" title="Home"><i class="fa fa-home"></i></a>
+			<a href="connect.html" title="Forums"><i class="fa-solid fa-user-group"></i></a>
+			<a href="dM.html" title="Direct Messages"><i class="fa-solid fa-comment-dots"></i></a>
+			<div class="dropdown">
+			  <button class="dropbtn" title="Notifications"><i class="fa fa-bell"></i></button>
+			  <div class="dropdown-content">
+				<a href="#">AtikaDevi liked your post!</a>
+				<a href="#">AntonioMadrigal replied to your comment!</a>
+				<a href="#">TomathySimons commented on your post!</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <button class="dropbtn"><i class="fa fa-bars"></i></button>
+			  <div class="dropdown-content">
+				<a href="tutor.html">Find A Tutor</a>
+				<a href="signup.html">Sign Up To Be A Tutor</a>
+				<a href="about-us.html">About Us</a>
+				<a href="contact-us.html">Contact Us</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <button class="dropbtn"><i class="fa fa-user"></i></button>
+			  <div class="dropdown-content">
+				<a href="#">Edit Profile</a>
+				<a href="#">Settings</a>
+				<a href="#">Help</a>
+			  </div>
+			</div>
+		</div>
+	</header>
+	
+	<section id="top">
+		
+		<form>
+			<i class="fa fa-user"></i> <strong>JamieLee</strong><br/>
+			<textarea name="post" rows="4" cols="100" placeholder="What's going on?">
+			</textarea>
+			<br/>
+			<button><i class="fa fa-image"></i></button>
+			<button><i class="fa fa-video"></i></button>
+			<button>Post</button>
+		</form>
+	</section>
+	
+	<section id="post">
 
+		<p><i class="fa fa-user"></i> <strong>TomathySimons</strong> posted in <strong>Video Editing</strong><br/>
+			PSA: If you are looking to get into video editing, Adobae is currently having a 30 day free trial for students!
+			#notsponsored
+		</p>
+	</section>
+	
+	<section id="post">
+		<p>
+			<i class="fa fa-user"></i> <strong>AnneMarie</strong> posted in <strong>Grade 11 Literature</strong><br/>
+			Help! Does anyone know have any notes on MacBeth that they are willing to share? I have a class test in a week that I need to study for!
+			<img src=""/>
+		</p>
+	</section>
+	
+	<section id="post">
+
+		<p>
+			<i class="fa fa-user"></i> <strong>JamieLee</strong> posted in <strong>Vents</strong><br/>
+			I think Literature is a really fun subject and all but wouldn't it be nice if we could learn stuff like how to do taxes? 
+		</p>
+	</section>
+	
+	<section id="post">
+		<p>
+			<i class="fa fa-user"></i> <strong>AtikaDevi</strong> posted in <strong>Grade 11 Math</strong><br/>
+			Hey does anyone know how to do this math equation?
+			<img src=""/>
+		</p>
+	</section>
+	
+	<!-- Footer -->
+	<footer>
+		<p><strong>LinkStudents Chicago</strong><br/>Connecting Students From All Over Chicago</p>
+		<p><strong><a href="contact-us.html">Contact Us</a></strong></p>
+	</footer>
 </body>
 </html>
