@@ -9,14 +9,14 @@
 	<meta name="author" content="Autumn, Xaed, Vy, Rasha"  />
 	<title>Chicago Students Connect - Connecting Students From All Over Chicago</title>
 	
+	<!-- Reference to external font 'Raleway' -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	
 	<!-- Reference to external CSS file -->
 	<link href="CSS/header.css" rel="stylesheet"/>
 	
 	<!-- Reference to external CSS file -->
-	<link href="CSS/footer.css" rel="stylesheet"/>
-	
-	<!-- Reference to external CSS file -->
-	<link href="CSS/main.css" rel="stylesheet"/>
+	<link href="CSS/index.css" rel="stylesheet"/>
 	
 	<!-- Reference to external site for icons -->
 	<script src="https://kit.fontawesome.com/fe0917ff4c.js" crossorigin="anonymous"></script>
@@ -31,7 +31,7 @@
 		</a>
 		<div class="search">
 			<form action="scripts/search.php">
-				<input type="text" placeholder="Search.." name="search"/>
+				<input type="text" placeholder="Search..." name="search"/>
 				<button type="submit"><i class="fa fa-search"></i></button>
 			</form>
 		</div>
@@ -68,16 +68,16 @@
 		</div>
 	</header>
 	
-	<section id="top">
+	<section id="createPost" class="top">
 		
 		<form>
 			<i class="fa fa-user"></i> <strong>JamieLee</strong><br/>
-			<textarea name="post" rows="4" cols="100" placeholder="What's going on?">
+			<textarea name="post" rows="4" cols="100" placeholder="What's on your mind?">
 			</textarea>
 			<br/>
-			<button><i class="fa fa-image"></i></button>
-			<button><i class="fa fa-video"></i></button>
-			<button>Post</button>
+			<button><i class="fa fa-image"></i> Attach Image</button>
+			<button><i class="fa fa-video"></i> Attach Video</button>
+			<button>Submit Post</button>
 		</form>
 	</section>
 	
@@ -85,7 +85,13 @@
 
 		<p><i class="fa fa-user"></i> <strong>TomathySimons</strong> posted in <strong>Video Editing</strong><br/>
 			PSA: If you are looking to get into video editing, Adobae is currently having a 30 day free trial for students!
-			#notsponsored
+			#notsponsored<br/>
+			<img src="Images/adobaePromo.jpg"/>
+		</p>
+		<p class="postButtons">
+			<button><i class="fa fa-heart"></i> Like</button> 
+			<button><i class="fa fa-comment"></i> Comment</button>
+			<button><i class="fa fa-bookmark"></i> Save</button>
 		</p>
 	</section>
 	
@@ -93,7 +99,11 @@
 		<p>
 			<i class="fa fa-user"></i> <strong>AnneMarie</strong> posted in <strong>Grade 11 Literature</strong><br/>
 			Help! Does anyone know have any notes on MacBeth that they are willing to share? I have a class test in a week that I need to study for!
-			<img src=""/>
+		</p>
+		<p class="postButtons">
+			<button><i class="fa fa-heart"></i> Like</button> 
+			<button><i class="fa fa-comment"></i> Comment</button>
+			<button><i class="fa fa-bookmark"></i> Save</button>
 		</p>
 	</section>
 	
@@ -103,20 +113,24 @@
 			<i class="fa fa-user"></i> <strong>JamieLee</strong> posted in <strong>Vents</strong><br/>
 			I think Literature is a really fun subject and all but wouldn't it be nice if we could learn stuff like how to do taxes? 
 		</p>
+		<p class="postButtons">
+			<button class="disabled"><i class="fa fa-heart"></i> Like</button> 
+			<button><i class="fa fa-comment"></i> Comment</button>
+			<button><i class="fa fa-bookmark"></i> Save</button>
+		</p>
 	</section>
 	
 	<section id="post">
 		<p>
 			<i class="fa fa-user"></i> <strong>AtikaDevi</strong> posted in <strong>Grade 11 Math</strong><br/>
-			Hey does anyone know how to do this math equation?
-			<img src=""/>
+			Hey can someone help me look over these math questions? I'm not sure if I'm correct or not :(<br/>
+			<img src="Images/mathHomework.jpg"/>
+		</p>
+		<p class="postButtons">
+			<button><i class="fa fa-heart"></i> Like</button> 
+			<button><i class="fa fa-comment"></i> Comment</button>
+			<button><i class="fa fa-bookmark"></i> Save</button>
 		</p>
 	</section>
-	
-	<!-- Footer -->
-	<footer>
-		<p><strong>LinkStudents Chicago</strong><br/>Connecting Students From All Over Chicago</p>
-		<p><strong><a href="contact-us.html">Contact Us</a></strong></p>
-	</footer>
 </body>
 </html>
