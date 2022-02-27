@@ -1,16 +1,92 @@
-<!-- This is our website's About Us page -->
+<!-- This is our website's About us page -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Describes what the company behind the website is aiming to do"/>
-	<meta name="keywords" content="about us page, about us" />
+	<meta name="description" content="This is where students can connect through forums on various topics"/>
+	<meta name="keywords" content="forums, discussion, collaboration" />
 	<meta name="author" content="Autumn, Xaed, Vy, Rasha"  />
-	<title></title>
+	<title>Chicago Students Connect - Connecting Students From All Over Chicago</title>
+	
+	<!-- Reference to external font 'Raleway' -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	
+	<!-- Reference to external CSS file -->
+	<link href="CSS/header.css" rel="stylesheet"/>
+	
+	<!-- Reference to external CSS file -->
+	<link href="CSS/about-us.css" rel="stylesheet"/>
+	
+	<!-- Reference to external site for icons -->
+	<script src="https://kit.fontawesome.com/fe0917ff4c.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
+<body style="overflow-y:scroll">
+	<!-- Navigation Bar -->
+	<header>
+		<a class="logo" href="index.html">
+			<img src="images/logo.jpg" alt="LinkStudents Chicago Logo" height="50px"/>
+		</a>
+		<div class="search">
+			<form action="scripts/search.php">
+				<input type="text" placeholder="Search.." name="search"/>
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		
+		<div class="icons">
+			<a href="index.html" title="Home"><i class="fa fa-home"></i></a>
+			<a class="active" href="connect.html" title="Forums"><i class="fa-solid fa-user-group"></i></a>
+			<a href="dM.html" title="Direct Messages"><i class="fa-solid fa-comment-dots"></i></a>
+			<div class="dropdown">
+			  <button class="dropbtn" title="Notifications"><i class="fa fa-bell"></i></button>
+			  <div class="dropdown-content">
+				<a href="#">AtikaDevi liked your post!</a>
+				<a href="#">AntonioMadrigal replied to your comment!</a>
+				<a href="#">TomathySimons commented on your post!</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <button class="dropbtn"><i class="fa fa-bars"></i></button>
+			  <div class="dropdown-content">
+				<a href="tutor.html">Find A Tutor</a>
+				<a href="signup.html">Sign Up To Be A Tutor</a>
+				<a href="about-us.html">About Us</a>
+				<a href="contact-us.html">Contact Us</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <button class="dropbtn"><i class="fa fa-user"></i></button>
+			  <div class="dropdown-content">
+				<a href="#">Edit Profile</a>
+				<a href="#">Settings</a>
+				<a href="#">Help</a>
+			  </div>
+			</div>
+		</div>
+	</header>
+<div id="aboutUs">
+	<div id="history">
+		<img src="Images/aboutUsBanner.png" alt="ChiStudents Connect" class="sec1">
+		<h3 class="historyText">History</h3>
+		<p class="chicagoHistory">
+			Chicago is one of the most diverse, creative, and innovative cities in the United States. Located in 
+			the heart of the Midwest, it is a connector between the nation’s two coasts. It is also ranked among
+			the top five most segregated cities in America. Despite the innovation, opportunities are not equally
+			accessible, and economic hardship is experienced disproportionately by Chicago’s Black and Latinx 
+			residents, who largely reside in the city’s South, Southwest, West, and Northwest Sides. 
+			</p>
+	</div>
+	<div id="mission">
+		<p class="ourMission">
+			To help aid inequality in the education sector, we have created this website to better help students 
+			from different districts collaborate. This collaboration will be based on academic and extra-curricular 
+			interests. We hope that this tool will help students have more access to the same resources. 
+		</p>
+	</div>
+</div>
 
 </body>
-</html
+</html>

@@ -14,3 +14,118 @@ strong {font: 1.1em bold; font-family: 'Open Sans', sans-serif; color: #dea034;}
 /* Header */
 
 /* Navigation Bar */
+/* Style for the header */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #58355e;
+    text-align: center;
+    position: fixed;
+  }
+  
+  /* Format text inside of header */
+  header a, header input[type=text], .dropdown-content a {
+      font: 16px Helvetica, sans-serif;
+      text-decoration: none;
+  }
+  
+  /* Header icons inherit background colour and are displayed as white */
+  header a {
+    background-color: inherit;
+    padding: 12px;
+    color: white;
+    margin: 0 auto;
+  }
+  
+  /* Pushes logo and search bar to the left side of the header */
+  .logo, .search {
+      float: left;
+      padding-top: 20px;
+      padding-left: 10px;
+  }
+  
+  /* Search Input */
+  header input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    border: none;
+  }
+  
+  /* Search and Dropdown Buttons */
+  header .search button, .dropbtn {
+    background-color: inherit;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Pushes icons to the right side of the header */
+  .icons {
+      float: right;
+      padding-top: 20px;
+      margin-right: 15px;
+  }
+  
+  /* Change the background of the header links and dropdown button on hover & focus */
+  .icons a:hover, .dropbtn:hover, .dropbtn:focus, .search button:hover {
+    background-color: #31a3d8;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #ff6d6d;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    left: -290%;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Displays the dropdown menu when the cursor hovers over the dropdown element */
+  .dropdown:hover .dropdown-content {display: block; float: right;}
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+  .logo, header a, header input[type=text], .dropbtn {
+      float: none;
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+      background-color: inherit;
+    }
+    header input[type=text] {
+      border: 1px solid #ccc;
+    }
+    
+    header .search button{
+        display: none;
+    }
+  }
