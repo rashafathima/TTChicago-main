@@ -1,0 +1,56 @@
+/* Styles the body*/
+body {
+	background-color: #fff;
+	font: 16px 'Raleway', sans-serif;
+}
+
+/* Adds a padding to the first section of the page */
+.top {
+	padding-top: 120px;
+}
+
+/* Styles the section */
+section {
+	min-width: 50%;
+	padding: 1em 200px;
+	float: center;
+	background-color: inherit;
+	color: #000;
+}
+
+/* Sets the max height of the image to 400px */
+section img{
+	max-height: 400px;
+	margin-top: 0.8em;
+}
+
+::placeholder {
+	font: 16px 'Raleway', sans-serif;
+}
+
+/* When the user hovers over a post, the background color changes */
+#post:hover {
+	background-color: #F9ECFC;
+}
+
+/* Sets the colour of the icons */
+button{
+	background-color: #ff4747;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	padding: 0.4em;
+	margin-top: 0.5em;
+}
+
+/* Changes the background color of the button when it is hovered over */
+button:hover {
+	background-color: #31a3d8;
+}
+
+/* Sets the background color for a button that is disabled */
+.disabled {
+	background-color: #aaa;
+}
